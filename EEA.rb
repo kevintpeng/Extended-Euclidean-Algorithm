@@ -13,6 +13,7 @@ end
 puts "Extended Euclidean Algorithm, Step by Step by Kevin Peng."
 a = ARGV[0].to_i
 b = ARGV[1].to_i
+a,b = b,a if b> a
 q1, q2, x1, y1, x2, y2, r1 = 0, 0, 1, 0, 0, 1, a
 pretty_print "x", "y", "r", "q"
 puts "----" * $WIDTH
